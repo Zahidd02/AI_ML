@@ -1,0 +1,7 @@
+1) Each image has 3 channels 'r', 'g' and 'b' that is shown in each pixel eg.[154 147 151]. 'r' = channel 0, 'g' = channel 1, 'b' =channel 2
+
+2) img[np.greater_equal(img[:, :, 1], 0) & np.less_equal(img[:, :, 1], 0)] = [255, 255, 0],
+	img = image variable
+	[255, 255, 0] = Yellow color
+	[condition] = Changes the color of every pixel where 'g' is 0 to yellow; 'g' only because in condition 'img[:, :, 1]' we have 	specified 1 which means 'g' from line 1.
+	

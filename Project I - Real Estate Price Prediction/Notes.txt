@@ -1,0 +1,19 @@
+# https://www.youtube.com/watch?v=iIkJrwVUl1c&list=PLu0W_9lII9ai6fAMHp-acBmJONT7Y4BSG&index=21 - (Code With Harry)
+
+1. It is a "Supervised" Learning problem => "Regression" task => Will be using "Batch learning" technique because we already have pre-    
+   existing data with us.
+2. For performance mesurement, we'll be using "Root Mean Squared Error (RMSE)" as it is preferred for regression task.
+3. The "housing.data" and "housing.names" dataset is obtained from : https://archive.ics.uci.edu/ml/machine-learning-databases/housing/
+4. In case of missing values in actual data, you have 3 following options:
+    - Get rid of the column containing missing values (using "drop" function)
+    - Get rid of missing data points (using "dropna" function)
+    - Set the value to either 0, mean or median of the column (using "fillna" function)
+5. Basic Scikit-learn design includes:
+    - Estimators - It estimates some parameter based on a dataset. i.e. "imputer", It has a fit method and a transform method. Fit method - fits the dataset and calculates internal parameters.
+    - Transformers - transform method takes input and returns output based on the learnings from fit(). It also has a convenience function called fit_transform() which fits and then transforms which is more optimised.
+    - Predictors - Linear Regression model is an example of predictor, fit() and predict() are two common functions. It also gives score() function which will evaluate the predictions.
+6. There are 2 types of feature scaling methods:
+    - Min-max scaling or Normalization: (value - min)/(max - min) [Sklearn provides a class named MinMaxScaler for this]
+    - Standardization: (value - mean)/std [Sklearn provides a class named Standard Scaler for this]
+7. According to Model Outputs file, we can see that Random Forest Regression works best due to lowest mean, the order is:
+    - Random Forest Regression > Decision Tree Regression > Simple Regression
